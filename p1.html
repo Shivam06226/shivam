@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <title>Indiana's-THE_GRAND_HOTEL</title>
+    <link rel="stylesheet" href="css/style.css">
+<style>
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+ /*CSS Variables */
+  /*:root{
+    --navbar-heighy:59px;
+ } */
+ /* navigation bar */
+ #navbar{
+    display:flex;
+    align-items: center;
+ }
+/* Navigatio bar :logo and image */
+#logo{
+    height: 56px;
+margin: 34px 45px;
+}
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+#navbar{
+    position: relative;
+}
+#navbar ul {
+    display: flex;
+}
+#navbar ::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+background-color: aliceblue;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 663px;
+}
+#home::before{
+    content:"";
+    background: url('../meat-skewer-1440105_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#home h1{
+    color: red;
+    text-align: center;
+} 
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 10;
+}
+/*services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+}
+#services .box img{
+    height: 160px;
+    margin:auto;
+    display: block;
+    
+}
+/* utility Classes */
+.h-primary{
+    font-size: 3.5rem;
+    padding: 12px
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding-block-end: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    background-color: brown;
+    border: 2px solid white;
+    color: white;
+    margin: 17px;
+    font-size: 1.5 rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+</style>
+  </head>
+  <body>
+   <nav id="navbar">
+    <div id="logo">
+      <img src="food-1487663_1920.png"   alt="Indiana's-THE_GRAND_HOTEL">
+    </div>
+    <ul>
+      <li class="item"><a href="#"> HOME</a></li>
+      <li class="item"><a href="#" >SERVICES</a></li>
+      <li class="item"><a href="#" >ABOUT US</a></li>
+      <li class="item"><a href="#"> CONTACT US</a></li>s
+     </ul><br><br><br><br>
+   </nav>
+   <section id="home">
+    <h1 class="h-primary">Welcome toIndiana's-THE_GRAND_HOTEL</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit ab
+       commodi repudiandae magnam, harum laudantium voluptatem dicta corrupti ullam quos. </p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit ab
+        commodi repudiandae magnam, harum laudantium voluptatem dicta corrupti ullam quos. </p>
+        <button class="btn">Order Now or NEVER</button>
+
+   </section>
+   <section>
+    <section class="services-container">
+      <h1 class="'h-primary center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="image1.jpg">
+          <h2 class="h-secondary center">Food Ordering</h2>
+          <p class="center" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, 
+            unde nobis recusandae neque et quam nulla quis sit ab mollitia
+             voluptate quas deleniti? Itaque harum velit id 
+             esse, ratione nam at ab iusto natus?</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
